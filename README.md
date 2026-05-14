@@ -19,6 +19,12 @@ That does not mean every entry is a Hodge theorem, a Hodge-conjecture attack, or
 
 The rule is: preserve origin, classify distance, prevent bastardization.
 
+## Anti-seed first
+
+Positive registry work must begin from `docs/anti-seed-hodge.md`.
+
+Anti-seed records known false formulations, category mistakes, unsafe promotions, and failure modes before any positive adjacency map is created. No Hodge-origin lane should be promoted until it names its anti-seed failure mode.
+
 ## Non-claims
 
 This repository does **not** claim a proof of the Hodge conjecture.
@@ -33,6 +39,7 @@ It does **not** treat analogy with Yang–Mills, BSD, RH, proof dynamics, Tempor
 
 ```text
 docs/
+  anti-seed-hodge.md
   claim-boundary.md
   program-map.md
   hodge-origin-registry.md
@@ -49,4 +56,4 @@ scripts/
 
 ## Current work
 
-The first workstream is a Hodge-origin registry that classifies the ranked adjacent problems without collapsing them into one field or overstating what follows from Paper I / Heller-Godel.
+The first workstream is the Hodge anti-seed: classify failure modes before classifying positive fallout. The second workstream is a Hodge-origin registry that classifies ranked adjacent problems without collapsing them into one field or overstating what follows from Paper I / Heller-Godel.
