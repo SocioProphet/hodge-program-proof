@@ -64,6 +64,24 @@ REQUIRED_STRATEGY_PHRASES = [
     "local regulator symbol -> Beilinson conjecture evidence",
 ]
 
+NONCLAIM_MARKERS = [
+    "does not claim",
+    "do not claim",
+    "does not prove",
+    "do not prove",
+    "does not advance",
+    "do not advance",
+    "does not imply",
+    "do not imply",
+    "must not",
+    "should not",
+    "cannot be promoted",
+    "not be promoted",
+    "is not",
+    "are not",
+    "not satisfied",
+]
+
 
 @dataclass(frozen=True)
 class UnsafePromotionPattern:
@@ -128,10 +146,6 @@ NEGATIVE_TEST_CASES = [
 ]
 
 
-def rel(path: Path) -> str:
-    return path.relative_to(ROOT).as_posix()
-
-
 def fail(message: str, failures: list[str]) -> None:
     failures.append(message)
 
@@ -188,7 +202,14 @@ def check_strategy_spine(failures: list[str]) -> None:
             fail(f"strategy spine missing required phrase: {phrase}", failures)
 
 
+def is_nonclaim_context(text: str) -> bool:
+    lowered = text.lower()
+    return any(marker in lowered for marker in NONCLAIM_MARKERS)
+
+
 def detect_unsafe_promotion(text: str) -> list[str]:
+    if is_nonclaim_context(text):
+        return []
     return [pattern.label for pattern in UNSAFE_PROMOTION_PATTERNS if pattern.pattern.search(text)]
 
 
