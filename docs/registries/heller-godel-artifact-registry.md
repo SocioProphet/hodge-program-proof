@@ -38,6 +38,7 @@ Each registry entry must record:
 | `docs/proofs/proof_class_moduli_requirements_scaffold.md` | proof-class moduli requirements scaffold | `hodge-method` | requirements / nonclaim | specifies what a future `M_phi` would need to support and defines failure modes for `HG-MODULI-002` | Do not treat requirements as construction, existence proof, joint satisfiability proof, or Hodge progress |
 | `docs/proofs/proof_class_moduli_scaffold_diagnostic.md` | proof-class moduli scaffold diagnostic | `hodge-method` | diagnostic evaluation / nonclaim | evaluates current apparatus against `HG-MODULI-001`; sequences `HG-MODULI-002` toward proof-class objects, realization-equivalence, and analytic realization assignment | Do not treat partial support as construction, full support, existence proof, or Hodge progress |
 | `docs/proofs/proof_class_moduli_construction_attempt.md` | proof-class moduli construction attempt | `hodge-method` | bounded construction proposal / partial construction / nonclaim | defines candidate proof-class analytic objects, layered realization-equivalence, and D1 analytic realization assignment; identifies parameter-object feasibility as next obstruction | Do not treat as full `M_phi` construction, existence proof, parameter-space construction, Hodge target extraction, or Hodge progress |
+| `docs/proofs/proof_class_moduli_parameter_feasibility.md` | proof-class moduli parameter feasibility analysis | `hodge-method` | feasibility analysis / bounded negative finding / nonclaim | establishes that only weak discrete or stratified-discrete registry organization is currently feasible; recommends `HG-MODULI-004` stratified registry construction | Do not treat as parameter-object construction, analytic/algebraic/projective parameter-space support, universal-family support, or Hodge progress |
 | `docs/review-ledgers/hg_session_2026_05_14_synthesis.md` | session synthesis ledger | `hodge-method` | provenance / historical record | maps Drive-side session artifacts to repo-grade successors and supersession decisions | Do not treat session history as theorem evidence or doctrine by itself |
 | `docs/proofs/p3_source_inventory.md` | p = 3 inventory | `hodge-method` | observation / nonclaim | records absence of p = 3 support surface | Do not treat as odd-prime theorem |
 | `docs/source-captures/eisenstein_mu3_capture.md` | source capture | `hodge-method` | source support | supports `mu_3` vocabulary | Do not treat as p = 3 fixture or `A_2` realization |
@@ -109,6 +110,19 @@ It does not construct a full `M_phi`, a parameter object, Hodge target data, alg
 parameter-object feasibility for proof-class analytic objects
 ```
 
+`HG-MODULI-003` analyzes that obstruction and concludes:
+
+```text
+weak discrete registry: feasible
+stratified discrete registry: feasible and recommended
+complex analytic parameter object: unsupported
+algebraic parameter object: unsupported
+smooth complex projective parameter object: unsupported
+universal family / descent object: unsupported
+```
+
+It recommends `HG-MODULI-004` as a stratified registry construction and explicitly blocks promotion from weak registry organization to analytic, algebraic, projective, or universal-family structure.
+
 ## Drive migration artifact notes
 
 The 2026-05-14 Drive migration is closed on the Heller-Godel side. The following repo-grade artifacts now supersede or consolidate the Drive-side materials:
@@ -164,7 +178,8 @@ Deligne-to-Hodge bridge theorem
 motivic realization framework
 Tate / Beilinson / Bloch-Kato arithmetic theorem
 full proof-class moduli M_phi construction
-parameter-object feasibility for proof-class analytic objects
+analytic, algebraic, or projective parameter object for proof-class analytic objects
+universal family or descent object
 ```
 
 ## Registry nonclaims
@@ -182,7 +197,8 @@ This registry does not claim:
 9. Drive-side reasoning is repo-grade except where consolidated by repo artifacts;
 10. requirements scaffolding proves construction, existence, or joint satisfiability;
 11. scaffold diagnostics prove construction, full support, existence, or Hodge progress;
-12. bounded construction proposals prove full moduli construction, parameter-space existence, or Hodge progress.
+12. bounded construction proposals prove full moduli construction, parameter-space existence, or Hodge progress;
+13. feasibility analysis proves parameter-object construction, projectivity, universal-family existence, or Hodge progress.
 
 ## Known process risk
 
