@@ -15,3 +15,5 @@ jobs:
           python-version: '3.11'
       - name: Check Hodge anti-seed and claim boundary
         run: python scripts/check_claim_boundary.py
+      - name: Check Hodge structure and negative paths
+        run: python scripts/check_hodge_structure.py
