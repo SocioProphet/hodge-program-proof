@@ -36,6 +36,7 @@ Each registry entry must record:
 | `docs/governance/major_problem_adjacency_taxonomy.md` | adjacency governance taxonomy | `hodge-method` | governance / nonclaim | distinguishes object-, methodology-, and outcome-adjacency for major-problem references | Do not treat methodology-adjacency or outcome-adjacency as mathematical evidence |
 | `docs/proofs/proof_class_moduli_bottleneck_consolidation.md` | Mode-convergence consolidation | `hodge-method` | workbench consolidation / nonclaim | records `M_phi` as the central structural bottleneck inferred from Modes A/B/C | Do not treat bottleneck identification as construction of `M_phi` or Hodge progress |
 | `docs/proofs/proof_class_moduli_requirements_scaffold.md` | proof-class moduli requirements scaffold | `hodge-method` | requirements / nonclaim | specifies what a future `M_phi` would need to support and defines failure modes for `HG-MODULI-002` | Do not treat requirements as construction, existence proof, joint satisfiability proof, or Hodge progress |
+| `docs/proofs/proof_class_moduli_scaffold_diagnostic.md` | proof-class moduli scaffold diagnostic | `hodge-method` | diagnostic evaluation / nonclaim | evaluates current apparatus against `HG-MODULI-001`; sequences `HG-MODULI-002` toward proof-class objects, realization-equivalence, and analytic realization assignment | Do not treat partial support as construction, full support, existence proof, or Hodge progress |
 | `docs/review-ledgers/hg_session_2026_05_14_synthesis.md` | session synthesis ledger | `hodge-method` | provenance / historical record | maps Drive-side session artifacts to repo-grade successors and supersession decisions | Do not treat session history as theorem evidence or doctrine by itself |
 | `docs/proofs/p3_source_inventory.md` | p = 3 inventory | `hodge-method` | observation / nonclaim | records absence of p = 3 support surface | Do not treat as odd-prime theorem |
 | `docs/source-captures/eisenstein_mu3_capture.md` | source capture | `hodge-method` | source support | supports `mu_3` vocabulary | Do not treat as p = 3 fixture or `A_2` realization |
@@ -73,13 +74,25 @@ candidate vocabulary != existence theorem
 
 The scaffold explicitly does not prove that `M_phi` exists, that the listed requirements are satisfiable, or that the listed requirements are jointly satisfiable.
 
-The next Heller-Godel-side research branch after `HG-MODULI-001` should be either:
+The scaffold diagnostic records the current support state:
 
 ```text
-HG-MODULI-002 construction / partial-construction / refutation attempt
+partial support: 7 requirements
+no support: 6 requirements
+full support: 0 requirements
+contradicted: 0 requirements
+overconstrained: 0 requirements
 ```
 
-or a scaffold-diagnostic evaluation that checks which requirements are partially supplied by the current apparatus.
+The diagnostic recommends that `HG-MODULI-002` begin with:
+
+```text
+proof-class objects
+realization-equivalence relation
+D1 analytic realization assignment
+```
+
+The diagnostic explicitly does not construct `M_phi`, prove `M_phi` exists, or promote partial support to full support.
 
 ## Drive migration artifact notes
 
@@ -151,7 +164,8 @@ This registry does not claim:
 7. p = 3 scaffolding is an odd-prime theorem;
 8. proof-class moduli `M_phi` exists;
 9. Drive-side reasoning is repo-grade except where consolidated by repo artifacts;
-10. requirements scaffolding proves construction, existence, or joint satisfiability.
+10. requirements scaffolding proves construction, existence, or joint satisfiability;
+11. scaffold diagnostics prove construction, full support, existence, or Hodge progress.
 
 ## Known process risk
 
