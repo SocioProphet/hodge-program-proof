@@ -30,12 +30,30 @@ Each registry entry must record:
 | `docs/appendices/appendix_a_chain_catalan_witness.md` | witness appendix | `hodge-method` | theorem / proposition support inside HG | finite witness and Catalan A1 fixture trace | Do not treat finite `mu_2` output as algebraicity |
 | `docs/proofs/catalan_a1_realization_equivalence.md` | theorem-support vocabulary | `hodge-method` | definition / support | realization-equivalence vocabulary for finite output | Do not promote to proof-class moduli or Hodge realization independence |
 | `docs/proofs/hodge_clay_target_gap_ledger.md` | Clay-facing gap ledger | `core-hodge` as target ledger; no proof claim | program-goal / nonclaim | maps missing Hodge objects | Do not treat ledger as construction of `X`, `alpha`, or cycles |
+| `docs/proofs/beilinson_regulator_catalan_motzkin_artifact.md` | local regulator-symbol artifact | `hodge-method` | workbench computation / nonclaim | repo-grade input for `HODGE-EVAL-001`; local Catalan and Motzkin regulator-symbol values | Do not treat as Beilinson conjecture evidence, Hodge target datum, algebraic cycle, or regulator-conjecture closure |
 | `docs/proofs/p3_source_inventory.md` | p = 3 inventory | `hodge-method` | observation / nonclaim | records absence of p = 3 support surface | Do not treat as odd-prime theorem |
 | `docs/source-captures/eisenstein_mu3_capture.md` | source capture | `hodge-method` | source support | supports `mu_3` vocabulary | Do not treat as p = 3 fixture or `A_2` realization |
 | `docs/proofs/p3_vocabulary_scaffold.md` | vocabulary scaffold | `hodge-method` | definition / scaffold | defines p = 3 primitives | Do not treat as closed p = 3 comparison |
 | `docs/proofs/p3_source3_candidate_inventory.md` | candidate inventory | `hodge-method` | observation / review criteria | selection criteria for future `Source_3` work | Do not treat as candidate selection |
 | `docs/review-ledgers/D1_RECONCILIATION_LEDGER.md` | reconciliation ledger | `hodge-method` | provenance | records D1 source reconciliation | Do not treat as theorem evidence by itself |
 | `docs/governance/heller-godel-readiness-2026-05-14.md` | governance readiness summary | `hodge-method` | governance / validation | summarizes gate state | Do not treat validation as mathematical proof |
+
+## Beilinson regulator artifact precision notes
+
+The Beilinson regulator artifact is repo-grade for Hodge Program evaluation, but not theorem-grade. It carries two explicit precision caveats in the Heller-Godel source artifact:
+
+1. regulator normalization: sign and factors depend on the chosen Deligne / regulator normalization and require convention verification before theorem-grade use;
+2. Motzkin auxiliary unit: the value `h(0) = 3/2` is carried from the Drive-side Mode-B computation and should be re-derived before theorem-grade use.
+
+These caveats do not block `HODGE-EVAL-001`; they prevent promotion beyond `hodge-method` classification.
+
+The artifact falls under the following obstruction-registry entries:
+
+```text
+OBS-HODGE-004  Deligne cohomology to algebraicity promotion risk
+OBS-HODGE-007  Regulator symbol to regulator conjecture promotion risk
+OBS-HODGE-008  Hodge-origin to Hodge-proof promotion risk
+```
 
 ## Current Heller-Godel theorem-state summary
 
