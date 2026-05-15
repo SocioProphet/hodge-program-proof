@@ -37,6 +37,7 @@ Each registry entry must record:
 | `docs/proofs/proof_class_moduli_bottleneck_consolidation.md` | Mode-convergence consolidation | `hodge-method` | workbench consolidation / nonclaim | records `M_phi` as the central structural bottleneck inferred from Modes A/B/C | Do not treat bottleneck identification as construction of `M_phi` or Hodge progress |
 | `docs/proofs/proof_class_moduli_requirements_scaffold.md` | proof-class moduli requirements scaffold | `hodge-method` | requirements / nonclaim | specifies what a future `M_phi` would need to support and defines failure modes for `HG-MODULI-002` | Do not treat requirements as construction, existence proof, joint satisfiability proof, or Hodge progress |
 | `docs/proofs/proof_class_moduli_scaffold_diagnostic.md` | proof-class moduli scaffold diagnostic | `hodge-method` | diagnostic evaluation / nonclaim | evaluates current apparatus against `HG-MODULI-001`; sequences `HG-MODULI-002` toward proof-class objects, realization-equivalence, and analytic realization assignment | Do not treat partial support as construction, full support, existence proof, or Hodge progress |
+| `docs/proofs/proof_class_moduli_construction_attempt.md` | proof-class moduli construction attempt | `hodge-method` | bounded construction proposal / partial construction / nonclaim | defines candidate proof-class analytic objects, layered realization-equivalence, and D1 analytic realization assignment; identifies parameter-object feasibility as next obstruction | Do not treat as full `M_phi` construction, existence proof, parameter-space construction, Hodge target extraction, or Hodge progress |
 | `docs/review-ledgers/hg_session_2026_05_14_synthesis.md` | session synthesis ledger | `hodge-method` | provenance / historical record | maps Drive-side session artifacts to repo-grade successors and supersession decisions | Do not treat session history as theorem evidence or doctrine by itself |
 | `docs/proofs/p3_source_inventory.md` | p = 3 inventory | `hodge-method` | observation / nonclaim | records absence of p = 3 support surface | Do not treat as odd-prime theorem |
 | `docs/source-captures/eisenstein_mu3_capture.md` | source capture | `hodge-method` | source support | supports `mu_3` vocabulary | Do not treat as p = 3 fixture or `A_2` realization |
@@ -94,6 +95,20 @@ D1 analytic realization assignment
 
 The diagnostic explicitly does not construct `M_phi`, prove `M_phi` exists, or promote partial support to full support.
 
+`HG-MODULI-002` partially constructs that starting wedge by defining:
+
+```text
+proof-class analytic objects
+finite-output / analytic-germ / regulator-seed equivalence layers
+D1 analytic realization assignment on decorated objects
+```
+
+It does not construct a full `M_phi`, a parameter object, Hodge target data, algebraic cycles, cycle equality, or a Deligne-to-Hodge bridge. Its next identified obstruction is:
+
+```text
+parameter-object feasibility for proof-class analytic objects
+```
+
 ## Drive migration artifact notes
 
 The 2026-05-14 Drive migration is closed on the Heller-Godel side. The following repo-grade artifacts now supersede or consolidate the Drive-side materials:
@@ -148,7 +163,8 @@ cycle-class equality alpha = sum_i q_i[Z_i]
 Deligne-to-Hodge bridge theorem
 motivic realization framework
 Tate / Beilinson / Bloch-Kato arithmetic theorem
-proof-class moduli M_phi construction
+full proof-class moduli M_phi construction
+parameter-object feasibility for proof-class analytic objects
 ```
 
 ## Registry nonclaims
@@ -165,7 +181,8 @@ This registry does not claim:
 8. proof-class moduli `M_phi` exists;
 9. Drive-side reasoning is repo-grade except where consolidated by repo artifacts;
 10. requirements scaffolding proves construction, existence, or joint satisfiability;
-11. scaffold diagnostics prove construction, full support, existence, or Hodge progress.
+11. scaffold diagnostics prove construction, full support, existence, or Hodge progress;
+12. bounded construction proposals prove full moduli construction, parameter-space existence, or Hodge progress.
 
 ## Known process risk
 
