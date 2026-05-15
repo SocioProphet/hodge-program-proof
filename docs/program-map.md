@@ -14,13 +14,14 @@ docs/obstruction-registry.md
 docs/intake/heller-godel-proof-fabric-intake.md
 docs/registries/heller-godel-artifact-registry.md
 docs/scaffolds/hodge_bridge_requirements_scaffold.md
+docs/strategy/hodge_strategy_spine.md
 ```
 
 ## Purpose
 
 This map explains how the current Hodge Program Proof repository pieces fit together.
 
-It maps the repository's scaffold, registry, intake, obstruction, and bridge-requirement layers. It does not create a theorem, claim progress on the Hodge conjecture, or assert that any registered artifact supplies algebraic cycles.
+It maps the repository's scaffold, registry, intake, obstruction, strategy-spine, and bridge-requirement layers. It does not create a theorem, claim progress on the Hodge conjecture, or assert that any registered artifact supplies algebraic cycles.
 
 The controlling doctrine remains:
 
@@ -43,6 +44,7 @@ prevent unsafe promotion
 | External workbench intake | `docs/intake/heller-godel-proof-fabric-intake.md` | Classifies Heller-Godel proof fabric as Hodge-method material | intake / non-claim |
 | External artifact registry | `docs/registries/heller-godel-artifact-registry.md` | Tracks Heller-Godel artifacts and forbidden promotions | registry / non-claim |
 | Bridge requirements | `docs/scaffolds/hodge_bridge_requirements_scaffold.md` | Defines the four requirements for any future Deligne-to-Hodge bridge attempt | scaffold / definition |
+| Strategy spine | `docs/strategy/hodge_strategy_spine.md` | Records the current boundary, missing bridge primitives, valid next options, and anti-promotion rules | synthesis / boundary / non-claim |
 
 ## Dependency graph
 
@@ -55,6 +57,7 @@ README.md
       -> docs/intake/heller-godel-proof-fabric-intake.md
       -> docs/registries/heller-godel-artifact-registry.md
       -> docs/scaffolds/hodge_bridge_requirements_scaffold.md
+      -> docs/strategy/hodge_strategy_spine.md
   -> docs/program-map.md
 ```
 
@@ -67,7 +70,8 @@ Operational reading:
 5. The obstruction registry translates anti-seed risks into reviewable obstruction entries and downgrade rules.
 6. The Heller-Godel intake and artifact registry handle the current external proof-workbench stream.
 7. The bridge requirements scaffold defines what would be required before method artifacts could even be evaluated for Hodge-facing promotion.
-8. This program map orients readers and future agents across the whole structure.
+8. The strategy spine records the current boundary and decision space after the Heller-Godel `M_phi` runway reached weak-registry level.
+9. This program map orients readers and future agents across the whole structure.
 
 ## Distance lanes
 
@@ -86,7 +90,7 @@ Current repository state:
 | --- | --- | --- |
 | `core-hodge` | README charter, anti-seed, claim-boundary, Hodge-origin registry, obstruction registry as boundary/control layer | Program structure only; no theorem claim |
 | `hodge-arithmetic` | No active theorem artifact | Empty as theorem lane |
-| `hodge-method` | Heller-Godel intake, Heller-Godel artifact registry, Hodge bridge scaffold | Method and proof-fabric layer only |
+| `hodge-method` | Heller-Godel intake, Heller-Godel artifact registry, Hodge bridge scaffold, strategy spine | Method and proof-fabric layer only |
 | `hodge-fallout` | YM analogue entries in `docs/obstruction-registry.md` | Diagnostic fallout only; no Hodge or Clay theorem claim |
 
 The fact that an artifact is Hodge-originated does not imply it belongs to `core-hodge` as a theorem.
@@ -103,7 +107,8 @@ The current positive structure is administrative and methodological:
 6. a Heller-Godel intake;
 7. a Heller-Godel artifact registry;
 8. a Hodge bridge requirements scaffold;
-9. this program map.
+9. a Hodge strategy spine;
+10. this program map.
 
 This is a proof-fabric infrastructure layer, not a proof layer.
 
@@ -130,6 +135,7 @@ Heller-Godel enters the Hodge Program through:
 ```text
 docs/intake/heller-godel-proof-fabric-intake.md
 docs/registries/heller-godel-artifact-registry.md
+docs/strategy/hodge_strategy_spine.md
 ```
 
 The current classification is:
@@ -151,6 +157,12 @@ The controlling anti-seed for the Heller-Godel stream is:
 
 ```text
 Finite phase characters, Deligne units, or Catalan A1 comparison diagrams must not be promoted into Hodge proof/progress.
+```
+
+The current boundary is summarized in:
+
+```text
+docs/strategy/hodge_strategy_spine.md
 ```
 
 ## Bridge-evaluation path
@@ -188,11 +200,20 @@ The following promotions are forbidden unless a future PR supplies explicit cons
 | regulator symbol -> regulator theorem | Supply motivic cohomology, regulator map, and L-value statement |
 | proof-fabric validation -> mathematical proof | Provide mathematical definitions, theorem statements, and proofs |
 | Heller-Godel method result -> Hodge progress | Pass through intake, registry, anti-seed, and bridge requirements |
+| registry row -> parameter space | Construct a parameter object with explicit structure |
+| stratified registry -> moduli space | Construct a moduli problem or represented functor |
+| weak registry -> projective structure | Construct a smooth complex projective variety or cite a theorem supplying one |
 
 The obstruction registry records these and related downgrade rules in structured form:
 
 ```text
 docs/obstruction-registry.md
+```
+
+The strategy spine records the current boundary in:
+
+```text
+docs/strategy/hodge_strategy_spine.md
 ```
 
 ## Workstream order
@@ -215,10 +236,13 @@ README-advertised files exist;
 program-map dependencies exist;
 hodge-origin-registry includes current core artifacts;
 obstruction-registry is referenced from the program map;
-claim-boundary and anti-seed files are present.
+claim-boundary and anti-seed files are present;
+strategy spine is present and referenced;
+Heller-Godel artifact registry rows contain classification, evidence, safe-use, and forbidden-promotion fields;
+negative-path samples reject unsafe promotion language.
 ```
 
-This checker should not add theorem claims. It should only prevent topology drift.
+This checker should not add theorem claims. It should only prevent topology drift and obvious unsafe-promotion regressions.
 
 ## Nonclaims
 
@@ -233,7 +257,9 @@ This program map does not claim:
 7. that Heller-Godel artifacts satisfy any Hodge bridge primitive;
 8. that registry inclusion upgrades evidence level;
 9. that the current map is exhaustive or permanent;
-10. that future theorem work is authorized without anti-seed and claim-boundary review.
+10. that future theorem work is authorized without anti-seed and claim-boundary review;
+11. that the strategy spine chooses a next research direction;
+12. that structural checkers are theorem validators.
 
 ## Update rule
 
@@ -244,6 +270,7 @@ Update this map when:
 3. the Heller-Godel intake classification changes;
 4. the bridge scaffold adds or removes a primitive;
 5. the obstruction registry adds a new category that affects program flow;
-6. a theorem-facing Hodge artifact is added.
+6. a theorem-facing Hodge artifact is added;
+7. the strategy spine changes the boundary or valid next decision options.
 
 Do not update this map for typo-only or formatting-only changes unless they affect artifact topology or claim boundaries.
