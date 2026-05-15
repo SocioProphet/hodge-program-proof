@@ -101,6 +101,24 @@ Anti-seed:
 - What is the strongest safe statement?
 ```
 
+## Cross-references to framework and PFK anti-seed
+
+The hodge-program-proof anti-seed register operates downstream of:
+
+- framework anti-seed at `SocioProphet/Heller-Godel/docs/framework-core/anti-seed-framework.md` at pinned commit `988307215ad38ccb16514311222184a1b757752b`;
+- PFK anti-seed at `SocioProphet/Heller-Godel/proof_fabric_kernel/docs/anti-seed-pfk.md` at the same pin.
+
+Hodge-specific anti-seed entries do not override framework or PFK entries; they extend Hodge-specific discipline under those constraints.
+
+Cross-referenced from Heller-Godel:
+
+- `[A-MTH-001 @ 988307215ad38ccb16514311222184a1b757752b]` — Universal Bridge does not transfer proofs.
+- `[A-MTH-002 @ 988307215ad38ccb16514311222184a1b757752b]` — Path(B) vs Pi_1(B) refinement is not Hodge progress.
+- `[A-MTH-003 @ 988307215ad38ccb16514311222184a1b757752b]` — Catalan / mu2 fixture is not Hodge progress.
+- `[A-PFK-OP-001 @ 988307215ad38ccb16514311222184a1b757752b]` — operator invocation is not evidence.
+- `[A-PFK-SCHEMA-001 @ 988307215ad38ccb16514311222184a1b757752b]` — schema validity is not content validity.
+- `[A-PFK-VAL-001 @ 988307215ad38ccb16514311222184a1b757752b]` — validator green status is not audit completion.
+
 ## Current controlling state
 
 No positive Hodge-origin registry entry should be merged until it names its anti-seed failure mode.
