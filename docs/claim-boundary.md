@@ -32,6 +32,30 @@ The following promotions are forbidden unless supported by a specific theorem or
 6. comparison diagram -> motivic theorem.
 7. source packet reference -> proof obligation closure.
 
+## Canonical framework and PFK boundary references
+
+This repository consumes Heller-Godel framework and PFK surfaces only by pinned commit:
+
+```text
+SocioProphet/Heller-Godel @ 988307215ad38ccb16514311222184a1b757752b
+```
+
+Relevant method and operational citations:
+
+- `[HG-MTH-005 @ 988307215ad38ccb16514311222184a1b757752b]` — Universal Bridge formal specification, method-grade only.
+- `[PFK-SCHEMA-001 @ 988307215ad38ccb16514311222184a1b757752b]` — claim-ledger row schema.
+- `[PFK-SCHEMA-002 @ 988307215ad38ccb16514311222184a1b757752b]` — Event-IR schema.
+- `[PFK-SCHEMA-003 @ 988307215ad38ccb16514311222184a1b757752b]` — proof-artifact schema.
+- `[PFK-SCHEMA-004 @ 988307215ad38ccb16514311222184a1b757752b]` — calibration-bundle schema.
+
+Boundary anti-seeds:
+
+- `[A-MTH-001 @ 988307215ad38ccb16514311222184a1b757752b]` — Universal Bridge does not transfer proofs.
+- `[A-MTH-003 @ 988307215ad38ccb16514311222184a1b757752b]` — Catalan / mu2 fixture is not Hodge progress.
+- `[A-PFK-OP-001 @ 988307215ad38ccb16514311222184a1b757752b]` — operator invocation is not evidence.
+- `[A-PFK-SCHEMA-001 @ 988307215ad38ccb16514311222184a1b757752b]` — schema validity is not content validity.
+- `[A-PFK-VAL-001 @ 988307215ad38ccb16514311222184a1b757752b]` — validator green status is not audit completion.
+
 ## Claim levels
 
 - `observation`: descriptive alignment or taxonomy.
