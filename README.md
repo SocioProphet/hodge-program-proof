@@ -25,6 +25,18 @@ Positive registry work must begin from `docs/anti-seed-hodge.md`.
 
 Anti-seed records known false formulations, category mistakes, unsafe promotions, and failure modes before any positive adjacency map is created. No Hodge-origin lane should be promoted until it names its anti-seed failure mode.
 
+## Framework and PFK dependency
+
+This repository depends on `SocioProphet/Heller-Godel @ 988307215ad38ccb16514311222184a1b757752b` for framework objects (`HG-*`) and canonical PFK operational substrate (`PFK-*`). See `DEPENDENCIES.md`.
+
+PFK schemas are canonically hosted at:
+
+```text
+SocioProphet/Heller-Godel/proof_fabric_kernel/schemas/
+```
+
+No local schema copy is authoritative. If a local schema directory exists in future work, it must not shadow canonical PFK schema names.
+
 ## Non-claims
 
 This repository does **not** claim a proof of the Hodge conjecture.
@@ -46,12 +58,11 @@ docs/
   obstruction-registry.md
 references/
   hodge-source-packet.md
-schemas/
-  claim-ledger.schema.json
 scripts/
   check_claim_boundary.py
 .github/workflows/
   validate.yml
+DEPENDENCIES.md
 ```
 
 ## Current work
