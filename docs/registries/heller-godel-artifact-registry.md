@@ -31,6 +31,11 @@ Each registry entry must record:
 | `docs/proofs/catalan_a1_realization_equivalence.md` | theorem-support vocabulary | `hodge-method` | definition / support | realization-equivalence vocabulary for finite output | Do not promote to proof-class moduli or Hodge realization independence |
 | `docs/proofs/hodge_clay_target_gap_ledger.md` | Clay-facing gap ledger | `core-hodge` as target ledger; no proof claim | program-goal / nonclaim | maps missing Hodge objects | Do not treat ledger as construction of `X`, `alpha`, or cycles |
 | `docs/proofs/beilinson_regulator_catalan_motzkin_artifact.md` | local regulator-symbol artifact | `hodge-method` | workbench computation / nonclaim | repo-grade input for `HODGE-EVAL-001`; local Catalan and Motzkin regulator-symbol values | Do not treat as Beilinson conjecture evidence, Hodge target datum, algebraic cycle, or regulator-conjecture closure |
+| `docs/proofs/soule_voisin_ah_torsion_witness_artifact.md` | torsion-witness-shaped Mode-A artifact | `hodge-method` | workbench diagnostic / nonclaim | records torsion-witness-shaped `mu_2` data and missing projective/integral-Hodge structures | Do not treat as an Atiyah-Hirzebruch counterexample, integral Hodge class, or Hodge progress |
+| `docs/proofs/kuga_satake_k3_technique_transfer_diagnostic.md` | Kuga-Satake / K3 Mode-C diagnostic | `hodge-method` | negative technique-transfer diagnostic / nonclaim | blocks false transfer from finite `mu_2` character to K3/Tate/Hodge-structure machinery | Do not treat as K3, Tate, abelian-variety, or Hodge-conjecture evidence |
+| `docs/governance/major_problem_adjacency_taxonomy.md` | adjacency governance taxonomy | `hodge-method` | governance / nonclaim | distinguishes object-, methodology-, and outcome-adjacency for major-problem references | Do not treat methodology-adjacency or outcome-adjacency as mathematical evidence |
+| `docs/proofs/proof_class_moduli_bottleneck_consolidation.md` | Mode-convergence consolidation | `hodge-method` | workbench consolidation / nonclaim | records `M_phi` as the central structural bottleneck inferred from Modes A/B/C | Do not treat bottleneck identification as construction of `M_phi` or Hodge progress |
+| `docs/review-ledgers/hg_session_2026_05_14_synthesis.md` | session synthesis ledger | `hodge-method` | provenance / historical record | maps Drive-side session artifacts to repo-grade successors and supersession decisions | Do not treat session history as theorem evidence or doctrine by itself |
 | `docs/proofs/p3_source_inventory.md` | p = 3 inventory | `hodge-method` | observation / nonclaim | records absence of p = 3 support surface | Do not treat as odd-prime theorem |
 | `docs/source-captures/eisenstein_mu3_capture.md` | source capture | `hodge-method` | source support | supports `mu_3` vocabulary | Do not treat as p = 3 fixture or `A_2` realization |
 | `docs/proofs/p3_vocabulary_scaffold.md` | vocabulary scaffold | `hodge-method` | definition / scaffold | defines p = 3 primitives | Do not treat as closed p = 3 comparison |
@@ -54,6 +59,31 @@ OBS-HODGE-004  Deligne cohomology to algebraicity promotion risk
 OBS-HODGE-007  Regulator symbol to regulator conjecture promotion risk
 OBS-HODGE-008  Hodge-origin to Hodge-proof promotion risk
 ```
+
+## Drive migration artifact notes
+
+The 2026-05-14 Drive migration is closed on the Heller-Godel side. The following repo-grade artifacts now supersede or consolidate the Drive-side materials:
+
+```text
+Mode-A: docs/proofs/soule_voisin_ah_torsion_witness_artifact.md
+Mode-B: docs/proofs/beilinson_regulator_catalan_motzkin_artifact.md
+Mode-C: docs/proofs/kuga_satake_k3_technique_transfer_diagnostic.md
+Taxonomy: docs/governance/major_problem_adjacency_taxonomy.md
+Consolidation: docs/proofs/proof_class_moduli_bottleneck_consolidation.md
+Session ledger: docs/review-ledgers/hg_session_2026_05_14_synthesis.md
+```
+
+The initial Drive-side ranking `HG_MPR_001_v0_1_major_problem_ranking.md` is intentionally not repo-graded because it was superseded by the revised ranking captured in the adjacency taxonomy and session ledger.
+
+The newly registered Drive migration artifacts fall under these obstruction-registry entries:
+
+| Artifact | Obstruction-registry scope |
+| --- | --- |
+| Mode-A torsion witness | `OBS-HODGE-001`, `OBS-HODGE-008` |
+| Mode-C Kuga-Satake diagnostic | `OBS-HODGE-005`, `OBS-HODGE-008` |
+| Major-problem adjacency taxonomy | `OBS-HODGE-006`, `OBS-HODGE-008`; methodology-adjacency safeguards |
+| Proof-class moduli bottleneck consolidation | `OBS-HODGE-002`, `OBS-HODGE-004`, `OBS-HODGE-005`, `OBS-HODGE-007`, `OBS-HODGE-008` |
+| Session synthesis ledger | provenance only; no theorem or obstruction-removal claim |
 
 ## Current Heller-Godel theorem-state summary
 
@@ -84,6 +114,7 @@ cycle-class equality alpha = sum_i q_i[Z_i]
 Deligne-to-Hodge bridge theorem
 motivic realization framework
 Tate / Beilinson / Bloch-Kato arithmetic theorem
+proof-class moduli M_phi construction
 ```
 
 ## Registry nonclaims
@@ -96,7 +127,15 @@ This registry does not claim:
 4. comparison diagrams are motives;
 5. regulator symbols are Beilinson evidence;
 6. proof-fabric validation is mathematical proof;
-7. p = 3 scaffolding is an odd-prime theorem.
+7. p = 3 scaffolding is an odd-prime theorem;
+8. proof-class moduli `M_phi` exists;
+9. Drive-side reasoning is repo-grade except where consolidated by repo artifacts.
+
+## Known process risk
+
+Substantive Heller-Godel workbench PRs can create a registry-staleness window in this Hodge Program registry. The window should be closed by a registry-update PR within the same review batch as the workbench PRs that created it.
+
+The first structural checker should focus on internal consistency of the Hodge Program repository. Cross-repo staleness detection remains a manual-discipline item until a cross-repo-aware checker is designed.
 
 ## Update rule
 
