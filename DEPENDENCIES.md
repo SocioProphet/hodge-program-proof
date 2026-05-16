@@ -4,7 +4,7 @@
 
 | Repository | Commit SHA | Cited content |
 |---|---|---|
-| `SocioProphet/Heller-Godel` | `988307215ad38ccb16514311222184a1b757752b` | Framework objects (`HG-*`) from `docs/framework-core/`; PFK operational substrate from `proof_fabric_kernel/` |
+| `SocioProphet/Heller-Godel` | `2ea5f5162bcc8421840df4b33a51580e2732f391` | Framework objects (`HG-*`) from `docs/framework-core/`; PFK operational substrate from `proof_fabric_kernel/` |
 
 ## Cited objects
 
@@ -14,7 +14,8 @@
 |---|---|---|
 | `HG-FND-*` | Foundational vocabulary | typing for boundary principle, distance classification, and anti-seed discipline |
 | `HG-EX-001` | Catalan / mu2 fixture | applies to Catalan / mu2 fixture-grade comparison work |
-| `HG-MTH-005` | Universal Bridge formal specification | method-grade shared-missing-machinery diagnosis; does not transfer proofs |
+| `HG-MTH-005` | Universal Bridge formal specification | parent / general bridge axiom; does not transfer proofs |
+| `HG-MTH-006` | Universal Bridge: Hodge domain extension | canonical Hodge bridge spec; hodge-program-proof is the primary consumer |
 
 ### PFK operational substrate
 
@@ -47,24 +48,27 @@
 
 | Identifier | Failure mode |
 |---|---|
-| `A-MTH-001` | Universal Bridge does not transfer proofs |
-| `A-MTH-002` | Path(B) vs Pi_1(B) refinement is not Hodge progress |
-| `A-MTH-003` | Catalan / mu2 fixture is not Hodge progress |
+| `A-HG-MTH-001` | Universal Bridge does not transfer proofs |
+| `A-HG-MTH-002` | Catalan / mu2 fixture is not Clay progress |
+| `A-HG-MTH-003` | fixture-grade and theorem-grade citations must not be mixed |
+| `A-HG-MTH-004` | Standard Conjectures cited diagnostically are not assumed |
 
 ## Citation form
 
 ```text
-[HG-EX-001 @ 988307215ad38ccb16514311222184a1b757752b]
-[HG-MTH-005 @ 988307215ad38ccb16514311222184a1b757752b]
-[PFK-SCHEMA-001 @ 988307215ad38ccb16514311222184a1b757752b]
-[A-PFK-SCHEMA-001 @ 988307215ad38ccb16514311222184a1b757752b]
+[HG-EX-001 @ 2ea5f5162bcc8421840df4b33a51580e2732f391]
+[HG-MTH-005 @ 2ea5f5162bcc8421840df4b33a51580e2732f391]
+[HG-MTH-006 @ 2ea5f5162bcc8421840df4b33a51580e2732f391]
+[PFK-SCHEMA-001 @ 2ea5f5162bcc8421840df4b33a51580e2732f391]
+[A-HG-MTH-004 @ 2ea5f5162bcc8421840df4b33a51580e2732f391]
+[A-PFK-SCHEMA-001 @ 2ea5f5162bcc8421840df4b33a51580e2732f391]
 ```
 
 ## Forbidden edges
 
 - `hodge-program-proof` -> any other Clay-program repo (no horizontal dependencies)
 - `hodge-program-proof` -> Heller-Godel-other-than-pinned-commit (no floating references)
-- `hodge-program-proof` -> automorphic / number-theoretic methodology from RH or NP programs except through `HG-MTH-005` as method-grade analogy
+- `hodge-program-proof` -> automorphic / number-theoretic methodology from RH or NP programs except through `HG-MTH-005` and `HG-MTH-006` as method-grade analogy
 
 ## Scope discipline unchanged
 
@@ -76,6 +80,10 @@ The four-tier distance classification is preserved:
 4. Hodge-fallout — YM, BSD, RH/L-functions, Temporal Mechanics, Lawful Learning.
 
 This dependency declaration does not claim Hodge progress, does not promote any artifact, and does not advance the M_phi proof-class moduli wall.
+
+## Standard Conjectures discipline
+
+`HG-MTH-006` references Standard Conjectures B and D diagnostically, not assumptively. This repository does not assume SC-B, SC-D, Bloch-Kato, or Bloch-Beilinson unless a future artifact explicitly declares that assumption as a theorem premise.
 
 ## Actual-state note
 
