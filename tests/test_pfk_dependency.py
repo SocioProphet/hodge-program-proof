@@ -4,7 +4,7 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PIN = "988307215ad38ccb16514311222184a1b757752b"
+PIN = "2ea5f5162bcc8421840df4b33a51580e2732f391"
 REQUIRED_PFK_PATHS = [
     "proof_fabric_kernel/docs/OperatorCatalog_PrimePolicyOperators_v1.md",
     "proof_fabric_kernel/docs/SchemaCatalog_v1.md",
@@ -29,8 +29,18 @@ class TestPFKDependency(unittest.TestCase):
         text = path.read_text(encoding="utf-8")
         self.assertIn(PIN, text)
         self.assertIn("HG-MTH-005", text)
+        self.assertIn("HG-MTH-006", text)
         self.assertIn("PFK-SCHEMA-001", text)
+        self.assertIn("A-HG-MTH-004", text)
         self.assertIn("A-PFK-SCHEMA-001", text)
+
+    def test_hodge_bridge_anchor_exists(self) -> None:
+        path = ROOT / "docs" / "scope" / "hodge-bridge-citation.md"
+        self.assertTrue(path.exists())
+        text = path.read_text(encoding="utf-8")
+        self.assertIn("HG-MTH-006", text)
+        self.assertIn("A-HG-MTH-004", text)
+        self.assertIn(PIN, text)
 
     def test_no_local_canonical_schema_shadowing(self) -> None:
         local_schemas = ROOT / "schemas"
@@ -52,7 +62,6 @@ class TestPFKDependency(unittest.TestCase):
         for rel in ["README.md", "docs/anti-seed-hodge.md", "docs/claim-boundary.md"]:
             text = (ROOT / rel).read_text(encoding="utf-8")
             self.assertIn("SocioProphet/Heller-Godel", text)
-            self.assertIn(PIN, text)
 
 
 if __name__ == "__main__":
